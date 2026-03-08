@@ -185,7 +185,7 @@ export const mockVideos: Video[] = [
   {
     id: "2",
     title: "The William Montgomery Show - Ep. 200",
-    youtube_id: "dQw4w9WgXcQ",
+    youtube_id: "Ez9cQg-wa1w",
     description: "Milestone episode with special guests",
     thumbnail_url: null,
     category: "podcast",
