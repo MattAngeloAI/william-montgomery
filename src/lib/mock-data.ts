@@ -211,7 +211,7 @@ export const mockVideos: Video[] = [
   {
     id: "4",
     title: "The Big Red Machine - Full Special",
-    youtube_id: "dQw4w9WgXcQ",
+    youtube_id: "PjTChaFqZvQ",
     description: "William's first full-length comedy special",
     thumbnail_url: null,
     category: "special",
