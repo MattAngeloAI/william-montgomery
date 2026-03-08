@@ -198,7 +198,7 @@ export const mockVideos: Video[] = [
   {
     id: "3",
     title: "William Montgomery Stand-Up Set - Comedy Mothership",
-    youtube_id: "dQw4w9WgXcQ",
+    youtube_id: "ThYO8xr2ixQ",
     description: "Full 15-minute set from The Comedy Mothership",
     thumbnail_url: null,
     category: "clip",
