@@ -9,7 +9,7 @@ interface MerchPreviewProps {
   limit?: number;
 }
 
-export function MerchPreview({ limit = 3 }: MerchPreviewProps) {
+export function MerchPreview({ limit = 4 }: MerchPreviewProps) {
   const products = mockProducts
     .filter((p) => p.is_featured)
     .sort((a, b) => a.sort_order - b.sort_order)
@@ -19,7 +19,7 @@ export function MerchPreview({ limit = 3 }: MerchPreviewProps) {
     <section className="bg-[#0d0d15] py-16 md:py-24">
       <Container>
         <SectionHeader title="The Merch" />
-        <div className="scrollbar-hide mt-10 flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory md:grid md:grid-cols-3 md:overflow-visible md:pb-0">
+        <div className="scrollbar-hide mt-10 flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory md:grid md:grid-cols-4 md:overflow-visible md:pb-0">
           {products.map((product) => (
             <div
               key={product.id}

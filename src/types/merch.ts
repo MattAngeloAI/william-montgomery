@@ -9,6 +9,7 @@ export interface Product {
   sizes: string[] | null;
   in_stock: boolean;
   stripe_price_id: string | null;
+  url: string | null;
   sort_order: number;
   is_featured: boolean;
   created_at: string;

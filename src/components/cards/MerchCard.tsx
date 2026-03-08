@@ -55,12 +55,23 @@ export function MerchCard({ product }: MerchCardProps) {
       </div>
 
       {/* Buy Button */}
-      <button
-        disabled={!product.in_stock}
-        className="bg-gradient-red mt-3 w-full rounded-lg px-4 py-2.5 font-heading text-sm uppercase tracking-wider text-white transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50"
-      >
-        {product.in_stock ? "SHOP NOW" : "SOLD OUT"}
-      </button>
+      {product.url ? (
+        <a
+          href={product.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-gradient-red mt-3 block w-full rounded-lg px-4 py-2.5 text-center font-heading text-sm uppercase tracking-wider text-white transition hover:opacity-90"
+        >
+          SHOP NOW
+        </a>
+      ) : (
+        <button
+          disabled={!product.in_stock}
+          className="bg-gradient-red mt-3 w-full rounded-lg px-4 py-2.5 font-heading text-sm uppercase tracking-wider text-white transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50"
+        >
+          {product.in_stock ? "SHOP NOW" : "SOLD OUT"}
+        </button>
+      )}
     </div>
   );
 }
