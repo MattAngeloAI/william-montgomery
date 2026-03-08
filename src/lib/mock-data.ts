@@ -172,7 +172,7 @@ export const mockVideos: Video[] = [
   {
     id: "1",
     title: "William Montgomery - Kill Tony Best Moments",
-    youtube_id: "dQw4w9WgXcQ",
+    youtube_id: "z7JsJYWtW28",
     description: "A compilation of William's best Kill Tony one-minute sets",
     thumbnail_url: null,
     category: "kill_tony",
