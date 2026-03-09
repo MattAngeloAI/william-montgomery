@@ -12,10 +12,10 @@ export default function HomePage() {
     <>
       <Hero />
       <TourDates limit={4} />
+      <Podcast />
       <VideoGallery limit={6} />
       <InstagramFeed />
-      <MerchPreview limit={3} />
-      <Podcast />
+      <MerchPreview limit={4} />
       <SocialProof />
       <Newsletter />
     </>
