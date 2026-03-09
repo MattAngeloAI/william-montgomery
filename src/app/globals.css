@@ -42,9 +42,9 @@
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
 
-  --color-brand-red: #E63946;
-  --color-brand-red-dark: #B71C1C;
-  --color-brand-red-hot: #FF1744;
+  --color-brand-red: #D97706;
+  --color-brand-red-dark: #92400E;
+  --color-brand-red-hot: #F59E0B;
   --color-card-bg: #1A1A2E;
   --color-card-border: #2D2D44;
   --color-text-muted: #A0A0B0;
@@ -65,7 +65,7 @@
   --card-foreground: #FFFFFF;
   --popover: #1A1A2E;
   --popover-foreground: #FFFFFF;
-  --primary: #E63946;
+  --primary: #D97706;
   --primary-foreground: #FFFFFF;
   --secondary: #2D2D44;
   --secondary-foreground: #FFFFFF;
@@ -73,24 +73,24 @@
   --muted-foreground: #A0A0B0;
   --accent: #2D2D44;
   --accent-foreground: #FFFFFF;
-  --destructive: #FF1744;
+  --destructive: #F59E0B;
   --border: #2D2D44;
   --input: #2D2D44;
-  --ring: #E63946;
-  --chart-1: #E63946;
-  --chart-2: #FF1744;
-  --chart-3: #B71C1C;
+  --ring: #D97706;
+  --chart-1: #D97706;
+  --chart-2: #F59E0B;
+  --chart-3: #92400E;
   --chart-4: #A0A0B0;
   --chart-5: #2D2D44;
   --radius: 0.5rem;
   --sidebar: #0A0A0A;
   --sidebar-foreground: #FFFFFF;
-  --sidebar-primary: #E63946;
+  --sidebar-primary: #D97706;
   --sidebar-primary-foreground: #FFFFFF;
   --sidebar-accent: #1A1A2E;
   --sidebar-accent-foreground: #FFFFFF;
   --sidebar-border: #2D2D44;
-  --sidebar-ring: #E63946;
+  --sidebar-ring: #D97706;
 }
 
 @layer base {
@@ -122,22 +122,22 @@
     font-family: var(--font-inter);
   }
   .text-gradient-red {
-    background: linear-gradient(135deg, #E63946 0%, #FF1744 100%);
+    background: linear-gradient(135deg, #D97706 0%, #F59E0B 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
   .bg-gradient-red {
-    background: linear-gradient(135deg, #E63946 0%, #B71C1C 100%);
+    background: linear-gradient(135deg, #D97706 0%, #92400E 100%);
   }
   .glow-red {
-    box-shadow: 0 0 30px rgba(230, 57, 70, 0.3);
+    box-shadow: 0 0 30px rgba(217, 119, 6, 0.3);
   }
   .hero-gradient {
     background: linear-gradient(180deg, rgba(10,10,10,0) 0%, rgba(10,10,10,0.7) 60%, #0A0A0A 100%);
   }
   .text-shadow-red {
-    text-shadow: 0 0 40px rgba(230, 57, 70, 0.5);
+    text-shadow: 0 0 40px rgba(217, 119, 6, 0.5);
   }
   .scrollbar-hide {
     -ms-overflow-style: none;
