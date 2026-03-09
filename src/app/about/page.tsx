@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Container } from "@/components/layout/Container";
 import { SocialProof } from "@/components/sections/SocialProof";
 import { nicknames } from "@/constants/seo";
@@ -24,8 +25,17 @@ export default function AboutPage() {
           </div>
 
           <div className="flex flex-col items-center gap-12 md:flex-row md:items-start">
-            {/* Portrait Placeholder */}
-            <div className="h-80 w-64 flex-shrink-0 rounded-xl bg-gradient-to-br from-brand-red/20 to-brand-red-dark/30 md:h-96 md:w-80" />
+            {/* Portrait */}
+            <div className="relative h-80 w-64 flex-shrink-0 overflow-hidden rounded-xl md:h-96 md:w-80">
+              <Image
+                src="/images/william-portrait.jpg"
+                alt="William Montgomery performing on stage"
+                fill
+                className="object-cover object-top"
+                sizes="(max-width: 768px) 256px, 320px"
+                priority
+              />
+            </div>
 
             {/* Bio */}
             <div className="max-w-2xl">
