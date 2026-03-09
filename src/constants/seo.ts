@@ -15,14 +15,14 @@ export const siteConfig = {
     "Comedy Mothership",
     "Joe Rogan",
     "Vanilla Gorilla",
-    "Memphis Madman",
+    "Memphis Strangler",
   ],
 } as const;
 
 export const nicknames = [
   "The Big Red Machine",
   "The Vanilla Gorilla",
-  "The Memphis Madman",
+  "The Memphis Strangler",
   "The Tennessee Tickler",
   "The Strawberry Twist",
   "The Raisin-Bread Kid",

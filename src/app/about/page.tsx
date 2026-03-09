@@ -34,7 +34,7 @@ export default function AboutPage() {
                 performances on the legendary Kill Tony podcast, earning him
                 the title of longest-serving regular in the show&apos;s
                 history. Known by many names &mdash; The Big Red Machine, The
-                Vanilla Gorilla, The Memphis Madman &mdash; William has
+                Vanilla Gorilla, The Memphis Strangler &mdash; William has
                 become one of the most recognizable figures in the Austin
                 comedy scene.
               </p>
