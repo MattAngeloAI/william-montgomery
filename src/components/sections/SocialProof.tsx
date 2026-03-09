@@ -1,10 +1,10 @@
 import { Container } from "@/components/layout/Container";
 
 const logos = [
-  { name: "Kill Tony", abbr: "KT" },
-  { name: "Joe Rogan Experience", abbr: "JRE" },
-  { name: "The Comedy Mothership", abbr: "TCM" },
-  { name: "Deathsquad", abbr: "DS" },
+  { name: "Kill Tony", abbr: "KT", url: "https://www.youtube.com/@KillTony" },
+  { name: "Joe Rogan Experience", abbr: "JRE", url: "https://www.youtube.com/@joerogan" },
+  { name: "The Comedy Mothership", abbr: "TCM", url: "https://www.thecomedymothership.com" },
+  { name: "Deathsquad", abbr: "DS", url: "https://www.deathsquad.tv" },
 ];
 
 export function SocialProof() {
@@ -16,8 +16,11 @@ export function SocialProof() {
         </p>
         <div className="flex flex-wrap items-center justify-center gap-8 md:gap-16">
           {logos.map((logo) => (
-            <div
+            <a
               key={logo.name}
+              href={logo.url}
+              target="_blank"
+              rel="noopener noreferrer"
               className="group flex flex-col items-center transition-all"
             >
               <span className="font-heading text-2xl font-bold uppercase tracking-wider text-text-muted/50 transition-colors group-hover:text-white md:text-3xl">
@@ -26,7 +29,7 @@ export function SocialProof() {
               <span className="mt-1 text-xs text-text-muted/30 transition-colors group-hover:text-text-muted">
                 {logo.name}
               </span>
-            </div>
+            </a>
           ))}
         </div>
       </Container>
