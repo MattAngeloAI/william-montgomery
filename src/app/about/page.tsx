@@ -35,6 +35,13 @@ export default function AboutPage() {
                 sizes="(max-width: 768px) 256px, 320px"
                 priority
               />
+              {/* Dark orange vignette overlay */}
+              <div
+                className="pointer-events-none absolute inset-0 rounded-xl"
+                style={{
+                  boxShadow: "inset 0 0 60px 20px rgba(217, 119, 6, 0.25), inset 0 0 120px 40px rgba(10, 10, 10, 0.6)",
+                }}
+              />
             </div>
 
             {/* Bio */}
