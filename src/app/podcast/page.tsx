@@ -49,7 +49,7 @@ export default function PodcastPage() {
           <div className="flex flex-col items-center gap-10 md:flex-row md:items-start">
             <div className="relative h-72 w-72 flex-shrink-0 overflow-hidden rounded-2xl shadow-2xl">
               <Image
-                src="/images/podcast-logo.jpg"
+                src="/images/wm-show-logo.jpg"
                 alt="The William Montgomery Show"
                 fill
                 sizes="288px"

@@ -96,7 +96,7 @@ export function Podcast() {
           {/* Podcast Artwork */}
           <div className="relative h-64 w-64 flex-shrink-0 overflow-hidden rounded-2xl md:h-72 md:w-72">
             <Image
-              src="/images/podcast-logo.jpg"
+              src="/images/wm-show-logo.jpg"
               alt="The William Montgomery Show"
               fill
               sizes="288px"
