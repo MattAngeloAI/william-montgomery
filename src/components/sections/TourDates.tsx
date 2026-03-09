@@ -1,6 +1,7 @@
 import { SectionHeader } from "@/components/shared/SectionHeader";
 import { ShowCard } from "@/components/cards/ShowCard";
 import { Container } from "@/components/layout/Container";
+import { ScrollAnimation } from "@/components/shared/ScrollAnimation";
 import { mockShows } from "@/lib/mock-data";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
@@ -21,8 +22,10 @@ export function TourDates({ limit = 4, showViewAll = true }: TourDatesProps) {
       <Container>
         <SectionHeader title="Upcoming Shows" />
         <div className="mt-10 space-y-4">
-          {shows.map((show) => (
-            <ShowCard key={show.id} show={show} />
+          {shows.map((show, i) => (
+            <ScrollAnimation key={show.id} delay={i * 0.1}>
+              <ShowCard show={show} />
+            </ScrollAnimation>
           ))}
         </div>
         {showViewAll && (

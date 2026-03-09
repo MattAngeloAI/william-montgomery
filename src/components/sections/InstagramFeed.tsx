@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Instagram } from "lucide-react";
 import { Container } from "@/components/layout/Container";
 import { SectionHeader } from "@/components/shared/SectionHeader";
+import { ScrollAnimation } from "@/components/shared/ScrollAnimation";
 
 const instagramPosts = [
   { id: 1, src: "/instagram/ig-1.jpg", shortcode: "C6_8F4kg3L8", alt: "Kill Tony stage moment" },
@@ -23,7 +24,8 @@ export function InstagramFeed() {
           subtitle="Follow along on Instagram"
         />
         <div className="mt-10 grid grid-cols-2 gap-2 sm:gap-3 md:grid-cols-3">
-          {instagramPosts.map((post) => (
+          {instagramPosts.map((post, i) => (
+            <ScrollAnimation key={post.id} delay={i * 0.08}>
             <a
               key={post.id}
               href={`https://instagram.com/p/${post.shortcode}/`}
@@ -42,6 +44,7 @@ export function InstagramFeed() {
                 <Instagram className="h-8 w-8 text-white opacity-0 transition-opacity group-hover:opacity-100" />
               </div>
             </a>
+            </ScrollAnimation>
           ))}
         </div>
         <div className="mt-8 text-center">
